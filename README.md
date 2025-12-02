@@ -25,8 +25,6 @@ This section focuses on challenges related to **Web Security**, covering a wide 
 ## 🛠️ Recommended Tools
 
 - **Burp Suite** (Proxy, Intruder, Repeater)
-- **SQLMap** (SQL Injection automation)
-- **Dirsearch / Gobuster** (Directory brute-forcing)
 - **Browser DevTools** (Inspect requests, scripts, and cookies)
 - **Python** (Scripting custom exploits)
 
