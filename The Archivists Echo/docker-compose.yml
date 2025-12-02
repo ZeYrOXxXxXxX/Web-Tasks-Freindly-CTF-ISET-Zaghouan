@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: the-archivist-echo
+    ports:
+      - "8080:80"
+    volumes:
+      - ./flag.txt:/flag.txt:ro
+      - uploads_data:/var/www/html/uploads
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 128M
+          cpus: '0.5'
+
+volumes:
+  uploads_data:

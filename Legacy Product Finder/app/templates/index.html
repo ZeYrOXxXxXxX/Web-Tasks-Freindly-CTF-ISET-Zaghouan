@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Legacy Product Finder</title>
+    <style>
+        body { font-family: monospace; background: #0a0a0a; color: #00ff00; }
+        .container { border: 1px solid #00ff00; width: 60%; margin: 50px auto; padding: 20px; }
+        h1, h2 { color: #00ff00; }
+        .error { 
+            color: #ff0000; 
+            background: #330000; 
+            padding: 15px; 
+            border: 1px solid #ff0000; 
+            font-size: 1.2em; 
+            line-height: 1.6;
+        }
+        input, button { background: #111; color: #00ff00; border: 1px solid #00ff00; padding: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Legacy Product Finder</h1>
+        <form method="GET">
+            <label for="id">Product ID:</label>
+            <input type="text" name="id" id="id" value="{{ product_id }}">
+            <button type="submit">Search</button>
+        </form>
+        <hr>
+        {% if error %}
+            <h2>An Error Occurred!</h2>
+            <pre class="error">{{ error }}</pre>
+        {% elif product %}
+            <h2>Product Details</h2>
+            <p><strong>Name:</strong> {{ product[0] }}</p>
+            <p><strong>Description:</strong> {{ product[1] }}</p>
+        {% else %}
+            <p>Product not found.</p>
+        {% endif %}
+    </div>
+</body>
+</html>

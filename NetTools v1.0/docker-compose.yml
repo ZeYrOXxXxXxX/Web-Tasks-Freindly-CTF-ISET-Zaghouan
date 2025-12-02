@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  nettools-app:
+    build: ./challenge
+    container_name: securinets_expect_chall
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    tmpfs:
+      - /tmp:size=10M
+    environment:
+      - CTF_NAME=Securinets_Quals_2025
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - SETUID
+      - SETGID
+      - DAC_OVERRIDE

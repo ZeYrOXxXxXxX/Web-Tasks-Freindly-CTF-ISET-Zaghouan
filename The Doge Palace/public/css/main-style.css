@@ -1,0 +1,19 @@
+body {
+    background-color: #282c34;
+    color: #ffd700;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+pre {
+    color: #ffb3ba;
+    font-size: 2em;
+}
+
+/*
+   such access control.
+   very apache.
+   much old config file.
+   wow.
+*/

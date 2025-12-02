@@ -1,0 +1,7 @@
+User-wow-agent: *
+Disallow: /very/secrets/
+Disallow: /you/dumb/
+
+# much rules.
+# many style.
+# the next clue is hidden in the pretty colors file.

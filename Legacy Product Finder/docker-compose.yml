@@ -1,0 +1,35 @@
+# The obsolete 'version' attribute has been removed.
+
+services:
+  webapp:
+    build: .
+    container_name: challenge-error-sqli-app
+    restart: always
+    ports:
+      - "5004:8000"
+    environment:
+      # Les identifiants pour se connecter à la BDD
+      - DB_HOST=db
+      - DB_USER=chall_user
+      - DB_PASSWORD=Password123!
+      - DB_NAME=legacy_corp
+    depends_on:
+      - db
+    # Contraintes de sécurité
+    read_only: true
+    tmpfs:
+      - /tmp
+
+  db:
+    image: mariadb:10.6
+    container_name: challenge-error-sqli-db
+    restart: always
+    environment:
+      - MARIADB_ROOT_PASSWORD=supersecretrootpassword
+      - MARIADB_DATABASE=legacy_corp
+      - MARIADB_USER=chall_user
+      - MARIADB_PASSWORD=Password123!
+    volumes:
+      # Ce volume initialise la BDD au premier lancement
+      - ./db_init:/docker-entrypoint-initdb.d
+

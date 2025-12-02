@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  web-challenge:
+    build: .
+    # I changed the name of the container for clarity
+    container_name: race-against-time
+    ports:
+      # Map port 8002 on your machine to port 5000 in the container
+      - "5006:5000"
+    restart: always
+    
+    # --- CONSTRAINTS ---
+    mem_limit: 128m
+    read_only: true
+    tmpfs:
+      - /tmp

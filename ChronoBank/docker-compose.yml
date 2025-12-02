@@ -1,0 +1,33 @@
+services:
+  # Init job to ensure host ./access.log is a FILE and writable before app starts
+  initlog:
+    image: busybox:1.36
+    volumes:
+      - ./:/host
+    entrypoint: ["sh", "-c", "[ -d /host/access.log ] && rm -rf /host/access.log; touch /host/access.log; chmod 666 /host/access.log"]
+    restart: "no"
+
+  chronobank:
+    build: .
+    depends_on:
+      initlog:
+        condition: service_completed_successfully
+    ports:
+      - "5013:5000"
+    read_only: true
+    mem_limit: 256m
+    environment:
+      - L3ALAM=Securintes{Bl1nd_SSTI_V1a_L0gs_!}
+    volumes:
+      - ./access.log:/app/access.log:rw
+    tmpfs:
+      - /tmp
+    user: "0:0"
+    command: ["gunicorn", "--bind", "0.0.0.0:5000", "app:app"]
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost:5000/login >/dev/null || exit 1"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+      start_period: 10s

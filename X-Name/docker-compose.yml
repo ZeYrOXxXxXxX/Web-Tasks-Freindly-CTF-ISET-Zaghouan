@@ -1,0 +1,27 @@
+services:
+  web:
+    build: .
+    ports:
+      - "5050:5000"
+    environment:
+      - FLAG=Securinets{h3ad3r_55t1_1s_v3ry_d4ng3r0u5}
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp:size=10M
+      - /var/tmp:size=10M
+    volumes:
+      - /var/log
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    cap_add:
+      - SETGID
+      - SETUID

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Logs - ChronoBank{% endblock %}
+{% block content %}
+<div class="container">
+    <h1>Server Access Logs</h1>
+    <div class="logs-box">
+        <pre><code>{% for line in logs %}{{ line | safe }}{% endfor %}</code></pre>
+    </div>
+</div>
+{% endblock %}

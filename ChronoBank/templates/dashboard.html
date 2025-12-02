@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Dashboard - ChronoBank{% endblock %}
+{% block content %}
+<div class="container">
+    <h1>Your Dashboard</h1>
+    <div class="card">
+        <h3>Current Account Balance</h3>
+        <p class="balance">$1,234.56</p>
+    </div>
+    <div class="card">
+        <h3>Recent Transactions</h3>
+        <ul>
+            <li>ATM Withdrawal - $50.00</li>
+            <li>Incoming Transfer - $300.00</li>
+            <li>Card Purchase - $25.99</li>
+        </ul>
+    </div>
+</div>
+{% endblock %}

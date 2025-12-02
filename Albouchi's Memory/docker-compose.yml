@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    ports:
+      - "8765:8765"
+    restart: always
+    container_name: ctf_chouflihal_app
+
+  web:
+    image: nginx:1.21-alpine
+    volumes:
+      - ./web:/usr/share/nginx/html
+    ports:
+      - "25544:80"
+    restart: always
+    container_name: ctf_chouflihal_web
+    depends_on:
+      - app
+

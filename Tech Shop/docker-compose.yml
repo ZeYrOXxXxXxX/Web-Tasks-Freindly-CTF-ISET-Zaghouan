@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      args:
+        FLAG_CONTENT: "Securinets{UNION_SELECT_INTO_OUTFILE_1S_4W3S0M3}"
+    ports:
+      - "8080:80"
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - shared-data:/var/www/html/images
+    networks:
+      - ctf-net
+    restart: always
+    deploy:
+      resources:
+        limits:
+          cpus: '0.3'
+          memory: 128M
+
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: r00t_lvKZ91HpIOQF4hOg
+      MYSQL_DATABASE: shop_db
+      MYSQL_USER: ctf_player
+      MYSQL_PASSWORD: player_pass
+    volumes:
+      - ./init:/docker-entrypoint-initdb.d:ro
+      - ./config/my.cnf:/etc/mysql/conf.d/my.cnf:ro
+      - shared-data:/var/lib/mysql-files
+    networks:
+      - ctf-net
+    restart: always
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-pr00t_lvKZ91HpIOQF4hOg"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 256M
+
+volumes:
+  shared-data:
+    driver: local
+
+networks:
+  ctf-net:
+    driver: bridge

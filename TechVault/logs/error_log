@@ -1,0 +1,40 @@
+[Fri Nov 21 21:30:56.524973 2025] [mpm_event:notice] [pid 1:tid 140014754632832] AH00489: Apache/2.4.49 (Unix) configured -- resuming normal operations
+[Fri Nov 21 21:30:56.527438 2025] [core:notice] [pid 1:tid 140014754632832] AH00094: Command line: 'httpd -D FOREGROUND'
+[Fri Nov 21 21:33:02.565350 2025] [cgi:error] [pid 10:tid 140014633600768] [client 172.18.0.1:36662] AH01215: (13)Permission denied: exec of '/flag.txt' failed: /flag.txt
+[Fri Nov 21 21:33:02.565790 2025] [cgi:error] [pid 10:tid 140014633600768] [client 172.18.0.1:36662] End of script output before headers: flag.txt
+[Fri Nov 21 21:34:27.131326 2025] [cgi:error] [pid 92:tid 140014046406400] [client 172.18.0.1:46818] AH01215: (13)Permission denied: exec of '/flag.txt' failed: /flag.txt
+[Fri Nov 21 21:34:27.131985 2025] [cgi:error] [pid 92:tid 140014046406400] [client 172.18.0.1:46818] End of script output before headers: flag.txt
+[Fri Nov 21 21:35:35.470069 2025] [cgi:error] [pid 92:tid 140014029620992] [client 172.18.0.1:48538] AH01215: (13)Permission denied: exec of '/flag.txt' failed: /flag.txt
+[Fri Nov 21 21:35:35.470591 2025] [cgi:error] [pid 92:tid 140014029620992] [client 172.18.0.1:48538] End of script output before headers: flag.txt
+[Fri Nov 21 21:40:00.993061 2025] [mpm_event:notice] [pid 1:tid 140014754632832] AH00492: caught SIGWINCH, shutting down gracefully
+[Fri Nov 21 21:40:02.650410 2025] [mpm_event:notice] [pid 1:tid 129334536889472] AH00489: Apache/2.4.49 (Unix) configured -- resuming normal operations
+[Fri Nov 21 21:40:02.651011 2025] [core:notice] [pid 1:tid 129334536889472] AH00094: Command line: 'httpd -D FOREGROUND'
+[Fri Nov 21 21:40:15.294708 2025] [cgi:error] [pid 14:tid 129334526961408] [client 172.18.0.1:43260] AH01215: (13)Permission denied: exec of '/flag.txt' failed: /flag.txt
+[Fri Nov 21 21:40:15.295190 2025] [cgi:error] [pid 14:tid 129334526961408] [client 172.18.0.1:43260] End of script output before headers: flag.txt
+[Fri Nov 21 21:40:16.398679 2025] [cgi:error] [pid 14:tid 129334510159616] [client 172.18.0.1:43266] AH01215: (13)Permission denied: exec of '/flag.txt' failed: /flag.txt
+[Fri Nov 21 21:40:16.399089 2025] [cgi:error] [pid 14:tid 129334510159616] [client 172.18.0.1:43266] End of script output before headers: flag.txt
+[Fri Nov 21 21:40:16.959693 2025] [cgi:error] [pid 14:tid 129334493357824] [client 172.18.0.1:45614] AH01215: (13)Permission denied: exec of '/flag.txt' failed: /flag.txt
+[Fri Nov 21 21:40:16.960248 2025] [cgi:error] [pid 14:tid 129334493357824] [client 172.18.0.1:45614] End of script output before headers: flag.txt
+[Fri Nov 21 21:40:22.069969 2025] [cgi:error] [pid 14:tid 129334148855552] [client 172.18.0.1:45630] AH01215: (13)Permission denied: exec of '/flag.txt' failed: /flag.txt
+[Fri Nov 21 21:40:22.070407 2025] [cgi:error] [pid 14:tid 129334148855552] [client 172.18.0.1:45630] End of script output before headers: flag.txt
+[Fri Nov 21 21:42:38.979248 2025] [mpm_event:notice] [pid 1:tid 129334536889472] AH00492: caught SIGWINCH, shutting down gracefully
+[Fri Nov 21 21:42:42.038577 2025] [mpm_event:notice] [pid 1:tid 126861988430976] AH00489: Apache/2.4.49 (Unix) configured -- resuming normal operations
+[Fri Nov 21 21:42:42.039032 2025] [core:notice] [pid 1:tid 126861988430976] AH00094: Command line: 'httpd -D FOREGROUND'
+[Fri Nov 21 21:42:45.177582 2025] [cgi:error] [pid 10:tid 126861978502912] [client 172.19.0.1:37090] AH01215: (13)Permission denied: exec of '/flag.txt' failed: /flag.txt
+[Fri Nov 21 21:42:45.178227 2025] [cgi:error] [pid 10:tid 126861978502912] [client 172.19.0.1:37090] End of script output before headers: flag.txt
+[Fri Nov 21 21:43:02.043728 2025] [cgi:error] [pid 10:tid 126861961701120] [client 172.19.0.1:40318] AH01215: (13)Permission denied: exec of '/etc/passwd' failed: /etc/passwd
+[Fri Nov 21 21:43:02.044120 2025] [cgi:error] [pid 10:tid 126861961701120] [client 172.19.0.1:40318] End of script output before headers: passwd
+[Fri Nov 21 21:43:59.769958 2025] [mpm_event:notice] [pid 1:tid 126861988430976] AH00492: caught SIGWINCH, shutting down gracefully
+[Fri Nov 21 21:44:04.063530 2025] [mpm_event:notice] [pid 1:tid 138850131920000] AH00489: Apache/2.4.49 (Unix) configured -- resuming normal operations
+[Fri Nov 21 21:44:04.064054 2025] [core:notice] [pid 1:tid 138850131920000] AH00094: Command line: 'httpd -D FOREGROUND'
+[Fri Nov 21 21:46:27.213921 2025] [mpm_event:notice] [pid 1:tid 138850131920000] AH00492: caught SIGWINCH, shutting down gracefully
+[Fri Nov 21 21:46:31.033251 2025] [mpm_event:notice] [pid 1:tid 135533738792064] AH00489: Apache/2.4.49 (Unix) configured -- resuming normal operations
+[Fri Nov 21 21:46:31.033684 2025] [core:notice] [pid 1:tid 135533738792064] AH00094: Command line: 'httpd -D FOREGROUND'
+[Fri Nov 21 21:46:44.170852 2025] [core:error] [pid 13:tid 135533703698176] (20023)The given path was above the root path: [client 172.21.0.1:58088] AH00127: Cannot map GET /cgi-bin/.%%32%65/.%%32%65/.%%32%65/.%%32%65/etc/passwd HTTP/1.1 to file
+[Fri Nov 21 21:46:58.215219 2025] [core:error] [pid 13:tid 135533686896384] (20023)The given path was above the root path: [client 172.21.0.1:56230] AH00127: Cannot map GET /cgi-bin/.%%32%65/.%%32%65/.%%32%65/.%%32%65/flag.txt HTTP/1.1 to file
+[Fri Nov 21 21:46:58.776211 2025] [core:error] [pid 13:tid 135533187557120] (20023)The given path was above the root path: [client 172.21.0.1:56232] AH00127: Cannot map GET /cgi-bin/.%%32%65/.%%32%65/.%%32%65/.%%32%65/flag.txt HTTP/1.1 to file
+[Fri Nov 21 21:47:44.779726 2025] [mpm_event:notice] [pid 1:tid 135533738792064] AH00492: caught SIGWINCH, shutting down gracefully
+[Fri Nov 21 21:47:48.386525 2025] [mpm_event:notice] [pid 1:tid 133443959129216] AH00489: Apache/2.4.49 (Unix) configured -- resuming normal operations
+[Fri Nov 21 21:47:48.386975 2025] [core:notice] [pid 1:tid 133443959129216] AH00094: Command line: 'httpd -D FOREGROUND'
+[Fri Nov 21 21:47:52.350306 2025] [cgi:error] [pid 8:tid 133443949201152] [client 172.22.0.1:43768] AH01215: (13)Permission denied: exec of '/flag.txt' failed: /flag.txt
+[Fri Nov 21 21:47:52.350934 2025] [cgi:error] [pid 8:tid 133443949201152] [client 172.22.0.1:43768] End of script output before headers: flag.txt

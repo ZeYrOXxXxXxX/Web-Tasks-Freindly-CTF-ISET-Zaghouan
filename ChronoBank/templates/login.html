@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Login - ChronoBank{% endblock %}
+{% block content %}
+<div class="login-container">
+    <div class="login-box">
+        <h2>Client Access</h2>
+        <p>Please log in to access your account.</p>
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+        <form method="POST">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Log In</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

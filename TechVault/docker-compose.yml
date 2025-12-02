@@ -1,0 +1,19 @@
+services:
+  vintage-shop:
+    build: .
+    container_name: securinets_vintage_shop
+    ports:
+      - "50000:80"
+    restart: always
+    read_only: true
+    tmpfs:
+      - /usr/local/apache2/logs/
+      - /run/
+    volumes:
+      - ./logs:/usr/local/apache2/logs
+    networks:
+      - ctf_net
+
+networks:
+  ctf_net:
+    driver: bridge

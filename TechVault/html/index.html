@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechVault - Premium Gadgets</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0f0f0f; color: #e0e0e0; line-height: 1.6; }
+        header { background: linear-gradient(135deg, #1a1a2e, #16213e); padding: 30px 20px; text-align: center; border-bottom: 2px solid #00d4ff; }
+        header h1 { font-size: 2.8em; letter-spacing: 3px; margin-bottom: 8px; color: #00d4ff; text-transform: uppercase; }
+        header p { color: #888; font-size: 1.1em; }
+        nav { background-color: #0a0a0a; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 100; }
+        nav a { color: #aaa; text-decoration: none; margin: 0 25px; font-weight: 600; transition: all 0.3s; text-transform: uppercase; font-size: 0.9em; letter-spacing: 1px; }
+        nav a:hover { color: #00d4ff; }
+        .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), linear-gradient(135deg, #1a1a2e 0%, #0f0f0f 100%); padding: 60px 20px; text-align: center; }
+        .hero h2 { font-size: 2em; color: #fff; margin-bottom: 15px; }
+        .hero p { color: #888; max-width: 600px; margin: 0 auto; }
+        .container { padding: 50px 20px; max-width: 1100px; margin: 0 auto; }
+        .section-title { text-align: center; margin-bottom: 40px; }
+        .section-title h2 { color: #00d4ff; font-size: 1.8em; text-transform: uppercase; letter-spacing: 2px; }
+        .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .product { background: linear-gradient(145deg, #1a1a1a, #0d0d0d); border: 1px solid #2a2a2a; border-radius: 12px; overflow: hidden; transition: all 0.3s; }
+        .product:hover { transform: translateY(-5px); border-color: #00d4ff; box-shadow: 0 10px 40px rgba(0, 212, 255, 0.1); }
+        .product-img { height: 180px; background: linear-gradient(135deg, #1a1a2e, #16213e); display: flex; align-items: center; justify-content: center; font-size: 4em; }
+        .product-info { padding: 20px; }
+        .product-info h3 { color: #fff; margin-bottom: 8px; font-size: 1.2em; }
+        .product-info p { color: #777; font-size: 0.9em; margin-bottom: 15px; }
+        .product-footer { display: flex; justify-content: space-between; align-items: center; }
+        .price { color: #00d4ff; font-weight: bold; font-size: 1.3em; }
+        .btn { background: linear-gradient(135deg, #00d4ff, #0099cc); color: #000; padding: 8px 20px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; transition: all 0.3s; text-transform: uppercase; font-size: 0.8em; }
+        .btn:hover { background: linear-gradient(135deg, #00e5ff, #00b8e6); }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 60px; padding-top: 60px; border-top: 1px solid #222; }
+        .feature { text-align: center; padding: 30px; }
+        .feature-icon { font-size: 2.5em; margin-bottom: 15px; }
+        .feature h3 { color: #fff; margin-bottom: 10px; }
+        .feature p { color: #666; font-size: 0.9em; }
+        footer { background: #0a0a0a; padding: 30px; text-align: center; margin-top: 60px; border-top: 1px solid #222; }
+        footer p { color: #555; font-size: 0.85em; }
+        .tag { background: #00d4ff22; color: #00d4ff; padding: 3px 10px; border-radius: 20px; font-size: 0.75em; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TechVault</h1>
+        <p>Premium Gadgets & Electronics</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Deals</a>
+        <a href="#">Support</a>
+        <a href="#">Account</a>
+    </nav>
+    <div class="hero">
+        <h2>Next-Gen Technology Awaits</h2>
+        <p>Discover our curated collection of cutting-edge gadgets, electronics, and tech accessories.</p>
+    </div>
+    <div class="container">
+        <div class="section-title">
+            <h2>Featured Products</h2>
+        </div>
+        <div class="products">
+            <div class="product">
+                <div class="product-img">🎧</div>
+                <div class="product-info">
+                    <span class="tag">New</span>
+                    <h3>ProSound X500 Headphones</h3>
+                    <p>Wireless noise-canceling headphones with 40hr battery life and premium drivers.</p>
+                    <div class="product-footer">
+                        <span class="price">$249.99</span>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-img">⌚</div>
+                <div class="product-info">
+                    <span class="tag">Bestseller</span>
+                    <h3>SmartFit Pro Watch</h3>
+                    <p>Advanced fitness tracking, heart rate monitor, GPS, and 7-day battery life.</p>
+                    <div class="product-footer">
+                        <span class="price">$399.99</span>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-img">📱</div>
+                <div class="product-info">
+                    <span class="tag">Limited</span>
+                    <h3>PowerBank Ultra 20K</h3>
+                    <p>20,000mAh capacity with fast charging support and dual USB-C ports.</p>
+                    <div class="product-footer">
+                        <span class="price">$79.99</span>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-img">🔊</div>
+                <div class="product-info">
+                    <span class="tag">Popular</span>
+                    <h3>BoomBox Mini Speaker</h3>
+                    <p>Portable Bluetooth speaker with 360° sound and waterproof design.</p>
+                    <div class="product-footer">
+                        <span class="price">$129.99</span>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-img">🎮</div>
+                <div class="product-info">
+                    <span class="tag">Gaming</span>
+                    <h3>Elite Controller Pro</h3>
+                    <p>Precision gaming controller with customizable buttons and RGB lighting.</p>
+                    <div class="product-footer">
+                        <span class="price">$159.99</span>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-img">💡</div>
+                <div class="product-info">
+                    <span class="tag">Smart Home</span>
+                    <h3>LumiSphere LED Kit</h3>
+                    <p>Smart RGB lighting system with voice control and app integration.</p>
+                    <div class="product-footer">
+                        <span class="price">$89.99</span>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">🚚</div>
+                <h3>Free Shipping</h3>
+                <p>Free delivery on all orders over $50</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔒</div>
+                <h3>Secure Payment</h3>
+                <p>100% secure payment processing</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">↩️</div>
+                <h3>Easy Returns</h3>
+                <p>30-day hassle-free return policy</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">💬</div>
+                <h3>24/7 Support</h3>
+                <p>Round-the-clock customer service</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 TechVault Electronics. All rights reserved.</p>
+    </footer>
+</body>
+</html>

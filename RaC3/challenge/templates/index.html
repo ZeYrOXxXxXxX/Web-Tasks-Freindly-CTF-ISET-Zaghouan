@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Race Against Time</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>The Race Against Time</h1>
+            <p>A High-Security Digital Vault</p>
+        </header>
+        <main>
+            <h2>Mission Briefing</h2>
+            <p>
+                The vault is protected by a key that is constantly changing. The key is a number between <strong>1 and 1000</strong>.
+                If you guess the correct key, the vault unlocks, but only for a moment.
+            </p>
+            <h3>How to Proceed:</h3>
+            <ol>
+                <li>Submit your guess to the endpoint: <code>/guess?key=&lt;your_guess&gt;</code>.</li>
+            </ol>
+            <p class="warning">
+                <strong>Warning:</strong> Any incorrect guess will cause the system to generate a new key, forcing you to start over.
+            </p>
+        </main>
+    </div>
+</body>
+</html>
