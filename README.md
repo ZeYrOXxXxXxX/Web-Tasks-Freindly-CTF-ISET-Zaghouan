@@ -11,7 +11,7 @@ This section focuses on challenges related to **Web Security**, covering a wide 
 |----|-----------------------------------------------------|------------|----------------------------------------------|
 | 1  | [Albouchi's Memory](./Albouchi's%20Memory/README.md)| 🟢 Easy    | WebSockets, Logic Flaw                       |
 | 2  | [ChronoBank](./ChronoBank/README.md)                | 🟡 Medium  | JWT Cracking, SSTI                           |
-| 3  | [Legacy Product Finder](./Legacy%20Product%20Finder/README.md) | 🟡 Medium  | SQL Injection (Error-Based)                  |
+| 3  | [Legacy Product Finder](./Legacy%20Product%20Finder/README.md) | 🟢 Medium/Easy  | SQL Injection (Error-Based)                  |
 | 4  | [NetTools v1.0](./NetTools%20v1.0/README.md)        | 🟡 Medium  | PHP Expect Wrapper, LFI                      |
 | 5  | [RaC3](./RaC3/README.md)                            | 🟡 Medium  | Race Condition, Scripting                    |
 | 6  | [Tech Shop](./Tech%20Shop/README.md)                | 🔴 Hard    | SQL Injection, RCE                           |
