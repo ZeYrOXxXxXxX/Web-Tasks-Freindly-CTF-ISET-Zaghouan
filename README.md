@@ -18,7 +18,7 @@ This section focuses on challenges related to **Web Security**, covering a wide 
 | 7  | [TechVault](./TechVault/README.md)                  | 🟡 Medium  | Path Traversal (CVE-2021-41773)              |
 | 8  | [The Archivists Echo](./The%20Archivists%20Echo/README.md) | 🟡 Medium  | LFI to RCE (ZIP Archive)                     |
 | 9  | [The Doge Palace](./The%20Doge%20Palace/README.md)  | 🟢 Easy    | Information Disclosure, Misconfiguration     |
-| 10 | [X-Name](./X-Name/README.md)                        | � Easy    | SSTI (Headers)                               |
+| 10 | [X-Name](./X-Name/README.md)                        | 🟢 Easy    | SSTI (Headers)                               |
 
 ---
 
